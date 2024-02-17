@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# VRBTech TT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is built using React, Redux, and MobX to display a list of articles. Users can add or remove articles (only those created by the user). Users can also pin an item, meaning the item has to be the first in the list. Only one pinned item is allowed. Items can be searched by name or description. 
 
-Currently, two official plugins are available:
+The application also includes a page where 10 articles are displayed from NewsAPI, and a button that allows the user to load an additional 10 articles. The articles should not be repeated if the user clicks the button multiple times.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Setup
 
-## Expanding the ESLint configuration
+1. Clone the repository: `git clone https://github.com/maryanmats/vrbtech-tt.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Available Scripts
 
-- Configure the top-level `parserOptions` property like this:
+- `npm run dev`: Starts the development server.
+- `npm run build`: Builds the app for production.
+- `npm run predeploy`: Runs the build script before deployment.
+- `npm run deploy`: Deploys the app to GitHub Pages.
+- `npm run lint`: Lints the codebase.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Technologies Used
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- React
+- Redux
+- TypeScript
+- Vite
+- Emotion
+- MUI
+- Classnames
+- Zod
+- Sass
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

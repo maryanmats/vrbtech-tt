@@ -1,0 +1,23 @@
+.block {
+  &-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+  }
+  &-actions {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  &-author {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+.action-btn {
+  &:hover {
+    cursor: pointer;
+  }
+}
